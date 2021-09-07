@@ -17,9 +17,35 @@
       <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
       <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
     </config-file>
-    <framework src="com.dmcBig:mediapicker:+"/>
     <source-file src="src/android/MediaPicker.java" target-dir="src/com/dmc/mediaPickerPlugin"/>
     <source-file src="src/android/FileHelper.java" target-dir="src/com/dmc/mediaPickerPlugin"/>
+    
+    <source-file src="src/android/mediapicker-project/src/main/java/com/dmc/mediapicker/adapter/FolderAdapter.java" target-dir="src/com/dmc/mediapicker/adapter"/>
+    <source-file src="src/android/mediapicker-project/src/main/java/com/dmc/mediapicker/adapter/MediaGridAdapter.java" target-dir="src/com/dmc/mediapicker/adapter"/>
+    <source-file src="src/android/mediapicker-project/src/main/java/com/dmc/mediapicker/adapter/SpacingDecoration.java" target-dir="src/com/dmc/mediapicker/adapter"/>
+
+    <source-file src="src/android/mediapicker-project/src/main/java/com/dmc/mediapicker/data/DataCallback.java" target-dir="src/com/dmc/mediapicker/data"/>
+    <source-file src="src/android/mediapicker-project/src/main/java/com/dmc/mediapicker/data/ImageLoader.java" target-dir="src/com/dmc/mediapicker/data"/>
+    <source-file src="src/android/mediapicker-project/src/main/java/com/dmc/mediapicker/data/LoaderM.java" target-dir="src/com/dmc/mediapicker/data"/>
+    <source-file src="src/android/mediapicker-project/src/main/java/com/dmc/mediapicker/data/MediaLoader.java" target-dir="src/com/dmc/mediapicker/data"/>
+    <source-file src="src/android/mediapicker-project/src/main/java/com/dmc/mediapicker/data/VideoLoader.java" target-dir="src/com/dmc/mediapicker/data"/>
+
+    <source-file src="src/android/mediapicker-project/src/main/java/com/dmc/mediapicker/entity/Folder.java" target-dir="src/com/dmc/mediapicker/entity"/>
+    <source-file src="src/android/mediapicker-project/src/main/java/com/dmc/mediapicker/entity/Media.java" target-dir="src/com/dmc/mediapicker/entity"/>
+
+    <source-file src="src/android/mediapicker-project/src/main/java/com/dmc/mediapicker/utils/DmcFileProvider.java" target-dir="src/com/dmc/mediapicker/utils"/>
+    <source-file src="src/android/mediapicker-project/src/main/java/com/dmc/mediapicker/utils/FileUtils.java" target-dir="src/com/dmc/mediapicker/utils"/>
+    <source-file src="src/android/mediapicker-project/src/main/java/com/dmc/mediapicker/utils/ScreenUtils.java" target-dir="src/com/dmc/mediapicker/utils"/>
+
+    <source-file src="src/android/mediapicker-project/src/main/java/com/dmc/mediapicker/view/HackyViewPager.java" target-dir="src/com/dmc/mediapicker/view"/>
+    <source-file src="src/android/mediapicker-project/src/main/java/com/dmc/mediapicker/view/PreviewFragment.java" target-dir="src/com/dmc/mediapicker/view"/>
+    <source-file src="src/android/mediapicker-project/src/main/java/com/dmc/mediapicker/view/SquareFrameLayout.java" target-dir="src/com/dmc/mediapicker/view"/>
+
+    <source-file src="src/android/mediapicker-project/src/main/java/com/dmc/mediapicker/PickerActivity.java" target-dir="src/com/dmc/mediapicker"/>
+    <source-file src="src/android/mediapicker-project/src/main/java/com/dmc/mediapicker/PickerConfig.java" target-dir="src/com/dmc/mediapicker"/>
+    <source-file src="src/android/mediapicker-project/src/main/java/com/dmc/mediapicker/PreviewActivity.java" target-dir="src/com/dmc/mediapicker"/>
+    <source-file src="src/android/mediapicker-project/src/main/java/com/dmc/mediapicker/TakePhotoActivity.java" target-dir="src/com/dmc/mediapicker"/>
+
     <resource-file src="src/android/Library/res/values-tr/multiimagechooser_strings_tr.xml" target="res/values-tr/multiimagechooser_strings_tr.xml"/>
     <resource-file src="src/android/Library/res/values-de/multiimagechooser_strings_de.xml" target="res/values-de/multiimagechooser_strings_de.xml"/>
   </platform>
