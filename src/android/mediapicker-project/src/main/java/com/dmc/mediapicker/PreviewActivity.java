@@ -88,10 +88,10 @@ public class PreviewActivity extends FragmentActivity implements View.OnClickLis
             Media media = preRawList.get(viewpager.getCurrentItem());
             int select = isSelect(media, selects);
             if (select < 0) {
-                check_image.setImageDrawable(ContextCompat.getDrawable(this, R.drawable.btn_selected));
+                check_image.setImageDrawable(ContextCompat.getDrawable(this, R.drawable.dmc_btn_selected));
                 selects.add(media);
             } else {
-                check_image.setImageDrawable(ContextCompat.getDrawable(this, R.drawable.btn_unselected));
+                check_image.setImageDrawable(ContextCompat.getDrawable(this, R.drawable.dmc_btn_unselected));
                 selects.remove(select);
             }
             setDoneView(selects.size());
@@ -172,7 +172,7 @@ public class PreviewActivity extends FragmentActivity implements View.OnClickLis
     @Override
     public void onPageSelected(int position) {
         bar_title.setText((position + 1) + "/" + preRawList.size());
-        check_image.setImageDrawable(isSelect(preRawList.get(position), selects) < 0 ? ContextCompat.getDrawable(this, R.drawable.btn_unselected) : ContextCompat.getDrawable(this, R.drawable.btn_selected));
+        check_image.setImageDrawable(isSelect(preRawList.get(position), selects) < 0 ? ContextCompat.getDrawable(this, R.drawable.dmc_btn_unselected) : ContextCompat.getDrawable(this, R.drawable.dmc_btn_selected));
     }
 
     @Override

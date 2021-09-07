@@ -19,7 +19,7 @@
             android:layout_height="18dp"
             android:layout_gravity="center_vertical"
             android:layout_marginRight="7dp"
-            android:src="@drawable/btn_selected" />
+            android:src="@drawable/dmc_btn_selected" />
         <TextView
             android:id="@+id/select_text"
             android:layout_centerVertical="true"
